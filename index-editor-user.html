@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Crear Usuario</title>
+  <title>Caos News</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,6 @@
   <link href="css/modern-business.css" rel="stylesheet">
 
 </head>
-
 <body>
 
   <!-- Navigation -->
@@ -82,7 +81,7 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"></li>
         <li class="nav-item">
-          <a class="nav-link" href="create-user.html">Crear Usuario</a>
+          <a class="nav-link" href="create-user.html">Bienvenido, usuario</a>
         </li>
         <!-- Boton de inicio (abre) -->
         <button
@@ -151,39 +150,87 @@
   </div>
 </nav>
 
-  <form action="/action_page.php" style="border:1px solid #ccc">
-    <div class="container">
-      <h1>Registrate</h1>
-
-      <p>Complete este formulario para crear una cuenta..</p>
-      <hr>
-  
-      <label for="email"><b>Correo
-        <span class="obligatorio">*</span>
-      </b></label>
-      <input type="text" placeholder="Ingrese Correo" name="email" required>
-  
-      <label for="psw"><b>Contraseña
-        <span class="obligatorio">*</span>
-      </b></label>
-      <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
-  
-      <label for="psw-repeat"><b>Repita Contraseña</b></label>
-      <input type="password" placeholder="Repita Contraseña" name="psw-repeat" required>
-      
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Recuerdame
-      </label>
-      
-  
-      <div class="clearfix">
-        <button type="button" class="cancelbtn">Cancelar</button>
-        <button type="submit" class="signupbtn">Crear</button>
+  <header>
+      <!-- Nombre Del Usuario -->
+    <section class="candidates-profile-bg">
+      <div class="bg-overlay"></div>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-6">
+                  <div class="candidates-profile-details text-center">
+                      <img src="https://negocios.uai.cl/assets/uploads/2021/04/ricardo-senerman-232x232-c-default.jpg" class="img-fluid d-block mx-auto rounded-circle img-thumbnail mb-4">
+                      <h4 class="text-white candidates-profile-name mb-2">Carlos Martinez</h4>
+                      <p class="text-white-50 mb-2"><i class="mdi mdi-bank mr-2"></i>Periodista Senior</p>
+                      <p class="text-white candidates-profile-name mb-2"></i>Noticias Totales: 4</p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-  </form>
-  
-    <!-- /.row -->
+</section>
+  </header>
+
+  <!-- Nombre del contenido -->
+  <div class="container">
+
+    <h1 class="my-4">Noticias Creadas</h1>
+
+    <!-- Seccion Noticias Creadas -->
+    
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-1.html"><img class="card-img-top" src="https://www.cooperativa.cl/noticias/site/artic/20210505/imag/foto_0000000920210505194942.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-1.html">Economía</a>
+            </h4>
+            <p class="card-text">Cámara Baja Aprobó bono de 200 mil pesos y rechazó 2% de
+              cotización Adicional</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-2.html"><img class="card-img-top" src="https://www.cooperativa.cl/noticias/site/artic/20210505/imag/foto_0000000120210505173726.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-2.html">Policial</a>
+            </h4>
+            <p class="card-text">Pablo Chill-E fue detenido tras huida de Carabineros en Auto
+              Robado.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        
+        <div class="card h-100">          
+          <a href="new-3.html"><img class="card-img-top" src="https://www.cooperativa.cl/noticias/site/artic/20210505/imag/foto_0000000120210505141044.jpg" alt=""></a>
+         
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-3.html">Economía</a>
+            </h4>
+            <p class="card-text"> BancoEstado: Clientes recibieron nueva tarjeta de CuentaRUT con
+                nombres escritos con plumón</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-4.html"><img class="card-img-top" src="https://plataformacientifica.cl/wp-content/uploads/2020/02/videojuegos3-800x480.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-4.html">Actualidad</a>
+            </h4>
+            <p class="card-text"> Videojuegos educativos para aprender ciencias en verano.</p>
+          </div>
+        </div>
+      </div>
+    
+
+
 
   </div>
 
@@ -193,11 +240,12 @@
         <p class="auto text-center text-white">--- Caos NEWS ----</p>
       </div>
     </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+  
+  </html>
+  
