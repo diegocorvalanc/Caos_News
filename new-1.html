@@ -8,13 +8,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Noticias</title>
+  <title>Noticias Usuario</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Buscador -->
+  <link href="css/Buscador.css" rel="stylesheet"/>
+
 
 </head>
 
@@ -65,15 +69,10 @@
        </li>
        <li class="nav-item">
          <div>
-           <input
-             class="busqueda mr-sm-2"
-             type="search"
-             placeholder=" Buscador..."
-             aria-label="buscar"
-             (keyup)="buscarPalabra(buscarTexto.value)"
-             #buscarTexto
-             width="30px"
-           />
+          <div>
+            <div class="autocomplete" >
+              <input id="myInput" class="buscador" name="mySearch" placeholder="Buscar..." />
+            </div>
          </div>
        </li>
      </ul>
@@ -356,6 +355,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/Buscador.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 </body>
 

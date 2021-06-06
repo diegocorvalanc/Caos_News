@@ -16,6 +16,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet" />
+
+    <!-- Buscador -->
+    <link href="css/Buscador.css" rel="stylesheet"/>
+
   </head>
   <body>
     <!-- Navigation -->
@@ -63,15 +67,10 @@
           </li>
           <li class="nav-item">
             <div>
-              <input
-                class="busqueda mr-sm-2"
-                type="search"
-                placeholder=" Buscador..."
-                aria-label="buscar"
-                (keyup)="buscarPalabra(buscarTexto.value)"
-                #buscarTexto
-                width="30px"
-              />
+              <div>
+                <div class="autocomplete" >
+                  <input id="myInput" class="buscador" name="mySearch" placeholder="Buscar..." />
+                </div>
             </div>
           </li>
         </ul>
@@ -241,20 +240,14 @@
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="index-invitado.html"
-              ><img
-                class="card-img-top"
-                src="https://www.cooperativa.cl/noticias/site/artic/20210505/imag/foto_0000000920210505194942.jpg"
-                alt=""
+            <a href="#"
+              ><img class="card-img-top" src="images/tecnologia.jpg" alt=""
             /></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="index-invitado.html">Bono 200 mil pesos</a>
+                <a href="new-1.html">Tecnología al alcance de la mano con IMOU</a>
               </h4>
-              <p class="card-text">
-                Cámara Baja Aprobó bono de 200 mil pesos y rechazó 2% de
-                cotización Adicional
-              </p>
+              <p class="card-text">Los sistemas Hazlo Tú Mismo (DIY por sus siglas en inglés), han revolucionado el poder de decisión de compra de las personas</p>
             </div>
           </div>
         </div>
@@ -405,14 +398,20 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"
-              ><img class="card-img-top" src="images/tecnologia.jpg" alt=""
+            <a href="index-invitado.html"
+              ><img
+                class="card-img-top"
+                src="https://www.cooperativa.cl/noticias/site/artic/20210505/imag/foto_0000000920210505194942.jpg"
+                alt=""
             /></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="new-1.html">Tecnología al alcance de la mano con IMOU</a>
+                <a href="index-invitado.html">Bono 200 mil pesos</a>
               </h4>
-              <p class="card-text">Los sistemas Hazlo Tú Mismo (DIY por sus siglas en inglés), han revolucionado el poder de decisión de compra de las personas</p>
+              <p class="card-text">
+                Cámara Baja Aprobó bono de 200 mil pesos y rechazó 2% de
+                cotización Adicional
+              </p>
             </div>
           </div>
         </div>
@@ -456,7 +455,7 @@
           <h1>Formulario de contacto</h1>
 
           <h4>Escríbenos si quieres contactarnos</h4>
-          <form action="submeter-formulario.php" method="post">
+          <form action="index-invitado.html" method="post">
             <p>
               <label for="Nombre" class="colocar_nombre mb-3"
                 >Nombre
@@ -471,17 +470,16 @@
               />
             </p>
             <p>
-              <label for="Email" class="colocar_email mb-3"
-                >Email
-                <span class="obligatorio">*</span>
-              </label>
-              <input
-                type="text"
-                name="introducir_email"
+              <label for="username" class="colocar_email mb-3"
+              >Email
+              <span class="obligatorio">*</span>
+            </label>
+                <input type="text" 
+                placeholder="Escribe tu Email" 
                 id="email"
-                required="obligatorio"
-                placeholder="Escribe tu Email"
-              />
+                required="obigatorio" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
             </p>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label"
@@ -496,10 +494,12 @@
               ></textarea>
             </div>
 
-            <button type="submit" name="enviar_formulario" id="enviar">
+            <button type="submit" name="registrar" id="enviar">
               Enviar
             </button>
 
+            <button type="reset" class="cancelar">Limpiar</button>
+            
             <p class="aviso">
               <span class="obligatorio"> * </span>Los campos son obligatorios.
             </p>
@@ -518,5 +518,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/Buscador.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/validation.js"></script>
   </body>
 </html>

@@ -16,6 +16,8 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
+  <!-- Buscador -->
+  <link href="css/Buscador.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -65,15 +67,9 @@
         </li>
         <li class="nav-item">
           <div>
-            <input
-              class="busqueda mr-sm-2"
-              type="search"
-              placeholder=" Buscador..."
-              aria-label="buscar"
-              (keyup)="buscarPalabra(buscarTexto.value)"
-              #buscarTexto
-              width="30px"
-            />
+            <div class="autocomplete" >
+              <input id="myInput" class="buscador" name="mySearch" placeholder="Buscar..." />
+            </div>
           </div>
         </li>
       </ul>
@@ -279,13 +275,15 @@
     <!-- Footer -->
     <footer class="dropdown-toggle-split bg-dark ">
       <div class="container">
-        <p class="auto text-center text-white">Buena Caurios &copy; Gran Grupo ----</p>
+        <p class="auto text-center text-white">--- CAOS NEWS ---</p>
       </div> 
     </footer>
   
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/Buscador.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   
   </body>
   
